@@ -1,0 +1,348 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Inter";
+    font-weight: 600;
+
+}
+
+body {
+    background: rgba(12, 24, 72, 1);
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: rgba(195, 233, 242, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+    box-shadow: 0px 6px 5px 0px rgba(32, 57, 85, 1);
+}
+
+img {
+    width: 60px;
+    height: 50px;
+}
+
+/* Header css---------------------------------------------------------- */
+
+.hamburger {
+    display: none;
+}
+
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: rgba(32, 57, 85, 1);
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 0px;
+}
+
+
+.nav-bar ul li a:hover {
+    color: white;
+    background: rgba(32, 57, 85, 1);
+
+}
+
+.nav-button {
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: rgba(32, 57, 85, 1);
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.nav-bar ul li a.active {
+    color: white;
+    background: rgba(32, 57, 85, 1);
+}
+
+/* Title css ------------------------------------------- */
+
+.container-title {
+    display: flex;
+    justify-content: space-between;
+    background-image: url("./assets/title_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding-top: 80px;
+    box-shadow: 0px 6px 5px 0px rgba(32, 57, 85, 1);
+}
+
+h1 {
+    font-size: 60px;
+    color: rgba(195, 233, 242, 1);
+    padding: 10px 20px;
+    margin: 40px 30px;
+}
+
+.title-button {
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    color: rgba(32, 57, 85, 1);
+    font-size: 15px;
+    margin: 40px 50px;
+    cursor: pointer;
+}
+
+/* About css ---------------------------------------------- */
+
+.about-title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    color: white;
+}
+
+.about-info {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.about-info span {
+    width: 50%;
+    color: white;
+    padding-left: 50px;
+    font-size: 30px;
+    border-right: 2px solid rgba(195, 233, 242, 1);
+
+}
+
+.about-info h3 {
+    color: rgba(195, 233, 242, 1);
+}
+
+.about-info img {
+    width: 270px;
+    height: 180px;
+    align-items: center;
+}
+
+.about-info div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Description css ------------------------------------------ */
+
+.container-discription {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    display: flex;
+    gap: 15px;
+}
+
+.container-discription img {
+    height: 100px;
+    width: 110px;
+}
+
+.container-discription h3 {
+    font-size: 30px;
+    color: rgba(195, 233, 242, 1);
+}
+
+.container-discription p {
+    color: white;
+}
+
+/* Timer css ----------------------------------------------- */
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.countdown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.countdown div {
+    width: 180px;
+    height: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    font-size: 5em;
+    color: rgba(32, 57, 85, 1);
+    background-color: rgba(195, 233, 242, 1);
+    box-shadow: 0px 6px 3px 1px rgba(195, 233, 242, 1);
+    border-radius: 20px;
+}
+
+.countdown div h1 {
+    font-size: 0.2em;
+    color: rgba(32, 57, 85, 1);
+}
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+@media only screen and (max-width:1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .bar {
+        width: 30px;
+        height: 3px;
+        background: rgba(32, 57, 85, 1);
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: rgba(195, 233, 242, 1);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ui li a {
+        margin-bottom: 12px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:769px) {
+    .merry-christmas {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width:390px) {
+    h1 {
+        font-size: 35px;
+
+    }
+
+    .about-info {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-info span {
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        border: 0px;
+        padding-top: 30px;
+        text-align: center;
+        padding-left: 0px;
+
+    }
+
+    .about-title {
+        font-size: 30px;
+
+    }
+
+    .container-discription {
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .container-discription img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .card {
+        width: 400px;
+        height: 150px;
+        display: flex;
+        gap: px;
+    }
+
+    .container-title {
+        height: 500px;
+        padding-top: 50px;
+    }
+
+}
